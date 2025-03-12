@@ -46,3 +46,8 @@ figure figcaption {
 figure img{
     border-radius: 8px;
 }
+
+li {
+    margin-left: 2em;
+    list-style-type: square;
+}
