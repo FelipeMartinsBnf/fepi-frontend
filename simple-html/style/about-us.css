@@ -46,6 +46,13 @@ figure{
     margin-top: 4px;
     margin-bottom: 4px;
 }
+
+#centro-distribuicao {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
 figure figcaption {
     font-size: 12px;
     font-style: italic;
@@ -58,4 +65,21 @@ figure img{
 li {
     margin-left: 2em;
     list-style-type: square;
+}
+
+#rodape{
+    color: #777;
+    padding: 30px 0;
+    margin: 30px 0;
+}
+
+#rodape img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
 }
