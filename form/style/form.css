@@ -1,0 +1,44 @@
+:root{
+    --color-base: #181818;
+    --color-base-border: #9e9e9e;
+    --base-font: "Titillium Web", serif;
+    --base-title-font: "Kanit", serif;
+}
+
+*{ 
+    padding: 0;
+    margin: 0;
+    font-family: var(--base-font);
+    color: var(--color-base);
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--base-title-font);
+    font-size: 28px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+.header_title{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.title-font {
+    font-size: 48px;
+    font-weight: 400;
+}
+.tilte-font-sec {
+    display: flex;
+    align-items: stretch;
+    font-size: 26px;
+}
+.icon-header span{
+    font-size: 48px;
+    text-align: center;
+}
