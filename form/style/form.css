@@ -20,25 +20,122 @@ h1, h2 {
 }
 
 header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    width: 100%;
     margin-top: 10px;
+    border-bottom: 1px solid #b9b7b7;
 }
 .header_title{
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin: 0;
 }
 .title-font {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 400;
 }
 .tilte-font-sec {
+    width: 100%;
     display: flex;
     align-items: stretch;
-    font-size: 26px;
+    font-size: 6px;
+}
+
+.tilte-font-sec div {
+    margin: 0;
 }
 .icon-header span{
     font-size: 48px;
     text-align: center;
 }
+
+.header_image{
+    margin-right: 0;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+
+}
+.header_image span {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.form-group{
+    font-size: 16px;
+    margin-top: 1em;
+}
+.form-group label{
+    display: block;
+    width: 50%;
+    font-weight: bold;
+    font-size: 20px;
+}
+.form-group input, .form-group select {
+    border: 2px solid rgb(126, 126, 126);
+    width: 50%;
+    display: block;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.separator {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Linhas à esquerda e à direita, texto no meio */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: "";
+    height: 1px;
+    background: #b9b7b7;;
+  }
+  input[type="file"]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 1%;
+    height: 1%;
+    cursor: pointer;
+  }
+  .custom-file label {
+    display: flex;
+    border: 2px solid rgb(126, 126, 126);
+    width: 50%;
+    display: block;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #2c2c2c;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .custom-file label span {
+    color: #eef6fd;
+    vertical-align: middle;
+    width: fit-content
+  }
+
+  .btn{
+    padding: 8px 16px;
+    font-size: 18px;
+    border: 1px solid #b9b7b7;
+    border-radius: 8px;
+  }
+
+  .btn-cancel{
+    background-color: #fadddb;
+  }
+  .btn-submit{
+    background-color: #eef6fd;
+  }

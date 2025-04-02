@@ -16,53 +16,54 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <div class="header_title">
-          <h1 class="title-font">Faça Seu Cadastro</h1>
-          <div class="tilte-font-sec">
-            <div>
-                <h2 >Compre Online
-                </h2>
+      <div>
+        <header>
+          <div class="header_title">
+            <h1 class="title-font">Faça Seu Cadastro</h1>
+            <div class="tilte-font-sec">
+              <div>
+                  <h2 >Compre Online
+                  </h2>
+              </div>
+              <div>
+                  <span class="icon-header">
+                      <span class="material-symbols-outlined icon-header">
+                          loyalty
+                          </span>
+                    </span>
+              </div>
+          
             </div>
-            <div>
-                <span class="icon-header">
-                    <span class="material-symbols-outlined icon-header">
-                        loyalty
-                        </span>
-                  </span>
-            </div>
-        
           </div>
-        </div>
-        <div class="header_image">
-            <span class="material-symbols-outlined">
-                face
-            </span>
-            <span class="material-symbols-outlined">
-                face_3
-            </span>
-            <span class="material-symbols-outlined">
-                add
-            </span>
-        </div>
-      </header>
+          <div class="header_image">
+              <span class="material-symbols-outlined">
+                  face
+              </span>
+              <span class="material-symbols-outlined">
+                  face_3
+              </span>
+              <span class="material-symbols-outlined">
+                  add
+              </span>
+          </div>
+        </header>
+      </div>
       <section>
         <div class="form-container">
           <form>
             <h2>Dados Pessoais</h2>
-
             <div class="form-group">
-              <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome" required />
+              <label for="nome">Nome:</label>
+              <input placeholder="Seu Nome" type="text" id="nome" name="nome" required />
             </div>
 
             <div class="form-group">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" required />
+              <label for="email">E-mail:</label>
+              <input placeholder="Seu E-mail" type="email" id="email" name="email" required />
             </div>
 
             <div class="form-group">
-              <label for="dataNascimento">Data de Nascimento</label>
+              <label for="dataNascimento">Data de Nascimento:</label>
               <input
                 type="date"
                 id="dataNascimento"
@@ -72,7 +73,7 @@
             </div>
 
             <div class="form-group">
-              <label for="cpf">CPF</label>
+              <label for="cpf">CPF:</label>
               <input
                 type="text"
                 id="cpf"
@@ -83,22 +84,22 @@
             </div>
 
             <div class="form-group">
-              <label for="rua">Rua</label>
-              <input type="text" id="rua" name="rua" required />
+              <label for="rua">Rua:</label>
+              <input placeholder="Sua Rua" type="text" id="rua" name="rua" required />
             </div>
 
             <div class="form-group">
-              <label for="numero">Número</label>
-              <input type="text" id="numero" name="numero" required />
+              <label for="numero">Número:</label>
+              <input placeholder="000" type="text" id="numero" name="numero" required />
             </div>
 
             <div class="form-group">
-              <label for="bairro">Bairro</label>
-              <input type="text" id="bairro" name="bairro" required />
+              <label for="bairro">Bairro:</label>
+              <input placeholder="Seu Bairro" type="text" id="bairro" name="bairro" required />
             </div>
 
             <div class="form-group">
-              <label for="cep">CEP</label>
+              <label for="cep">CEP:</label>
               <input
                 type="text"
                 id="cep"
@@ -109,12 +110,12 @@
             </div>
 
             <div class="form-group">
-              <label for="cidade">Cidade</label>
-              <input type="text" id="cidade" name="cidade" required />
+              <label for="cidade">Cidade:</label>
+              <input placeholder="Sua Cidade" type="text" id="cidade" name="cidade" required />
             </div>
 
             <div class="form-group">
-              <label for="estado">Estado</label>
+              <label for="estado">Estado:</label>
               <select id="estado" name="estado" required>
                 <option value="">Selecione um estado</option>
                 <option value="SP">São Paulo</option>
@@ -125,22 +126,28 @@
               </select>
             </div>
 
-            <h2>Login</h2>
+            <div class="separator">
+              <h2>Login</h2>
+            </div>
 
-            <div class="form-group">
-              <label for="imagemPerfil">Imagem de perfil</label>
-              <input type="file" id="imagemPerfil" name="imagemPerfil" />
-              <p>Nenhum arquivo selecionado.</p>
+            <div class="custom-file form-group">
+              <label for="imagemPerfil">Selecione a sua imagem de perfil
+                <span class="material-symbols-outlined">
+                  attachment
+                  </span>
+              </label>
+              <input type="file" accept="image/*" id="imagemPerfil" name="imagemPerfil" />
             </div>
 
             <div class="form-group">
-              <label for="senha">Senha</label>
-              <input type="password" id="senha" name="senha" required />
+              <label for="senha">Senha:</label>
+              <input placeholder="***" type="password" id="senha" name="senha" required />
             </div>
 
             <div class="form-group">
-              <label for="confirmacaoSenha">Confirmação de Senha</label>
+              <label  for="confirmacaoSenha">Confirmação de Senha:</label>
               <input
+                placeholder="Digite a sua senha novamente"
                 type="password"
                 id="confirmacaoSenha"
                 name="confirmacaoSenha"
