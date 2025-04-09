@@ -133,9 +133,13 @@ header{
     border-radius: 8px;
   }
 
-  .btn-cancel{
-    background-color: #fadddb;
+  .button-container{
+    margin-top: 4em;
+    display: flex;
   }
   .btn-submit{
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
     background-color: #eef6fd;
   }
