@@ -95,5 +95,17 @@ li {
         display: block;
         margin: 0;
     }
+
+    #rodape {
+        text-align: center;
+    }
+
+    #rodape img {
+        margin: 0 auto;
+    }
+
+    header img {
+        display: none;
+    }
     
 }
