@@ -1,7 +1,7 @@
 
 const linkExterno = document.querySelector("a[title='Google Maps']");
 
-linkExterno.addEventListener('click', () => {
-    alert("Você será redirecionado a um link externo")
+linkExterno.addEventListener('click', (e) => {
+    confirm("Você será redirecionado a um link externo") ? true : e.preventDefault()
 })
 
